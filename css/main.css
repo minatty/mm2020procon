@@ -1,0 +1,254 @@
+/* 背景 */
+body {
+    background: #000f;
+    overflow: hidden;
+  }
+  
+  /* コントロールパネル */
+  .controlPanel {
+    opacity: 0.2;
+    color: #fff;
+    box-shadow: 5px 5px 5px 0 rgba(47, 54, 58, 0.637);
+    border: solid 1px rgba(48, 71, 145, 0.562);
+    transform-origin: top left;
+    left: 0px;
+    width: 1250px;
+    height: 250px;
+    transition: left 0.3s;
+    position: relative;
+    z-index: 4;
+  }
+  .controlPanel:hover {
+    background: #000c;
+    opacity: 1.0;
+    z-index: 4;
+  }
+  .controlPanel_close {
+    left: -1200px;
+    transition: left 0.3s;
+  }
+
+  #panelIcon {
+    font-size: 50px;
+    text-align: right;
+  }
+  #panelIcon i:hover {
+    color: #dff;
+    cursor: pointer;
+  }
+  .displayNone {
+    display: none;
+  }
+
+
+  /* フッターと音源 */
+  #header,
+  #media {
+    position: fixed;
+    
+    z-index: 3;
+  }
+  
+  /* フッター */
+  #header {
+    top: 10px;
+    padding: 5px 10px;
+    
+    font-size: 10.5px;
+    font-weight: bold;
+    
+    display: flex;
+    
+    align-items: center;
+  }
+
+  /* 要素間のボーダー */
+  [name="border"] {
+    height: 30px;
+    border-right: 1px solid #fff9;
+  }
+  
+  /* 再生ボタン */
+  #control {
+    font-size: 21px;
+    padding: 5px;
+  }
+  #control.disabled {
+    display: none;
+  }
+  #control a, i {
+    color: #aff;
+    text-decoration: none;
+  }
+  #control a.disabled, i.disabled {
+    opacity: 0.3;
+  }
+  #control a:hover, i:hover {
+    color: #dff;
+  }
+
+  /* スコア情報 */
+  #score {
+    padding-left:  5em;
+    padding-right:  1em;
+  }
+  
+  /* 楽曲情報 */
+  #meta {
+    padding-left: 10px;
+  }
+  #meta span {
+    font-weight: normal;
+  }
+  
+  /* 音源 */
+  #media {
+    bottom: 10px;
+  }
+
+  /* VRMモデル設定部 */
+  div[name=modelOptions] {
+    font-size: 10.5px;
+    font-weight: bold;
+  }
+  #chkShapeAnimateLabel {
+    cursor: pointer;
+  }
+  #chkSwingArmLabel {
+    cursor: pointer;
+  }
+  #mouthPositionAdjust {
+    align-items: center;
+  }
+  #mouthPositionAdjust #X {
+    color: crimson;
+  }
+  #mouthPositionAdjust #Y {
+    color:lime;
+  }
+  #mouthPositionAdjust #Z {
+    color:aqua;
+  }
+  #models {
+    position:  fixed;
+    top: 340px;
+    cursor: pointer;
+    opacity: 0.3;
+    z-index: 4;
+  }
+  #models:hover {
+    opacity: 1.0;
+  }
+  #models img:hover {
+    transform: scale(1.4);
+    transition: 100ms;
+    border-style: solid;
+    border-color: #dff;
+  }
+  #sendagaya-shino {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/sendagaya-shino.png");
+  }
+  #Alicia-solid {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/Alicia_solid.png");
+  }
+  #shiwa-model {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/shiwami.png");
+  }
+  #original-model {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/original.png");
+  }
+
+  /* 3Dモデル表示スクリーン */
+  #screen {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    z-index: 2;
+  }
+  
+  /* 背景画像 */
+  #backgroundImageMelo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 977px;
+    opacity: 1.0;
+    background-image: url("../images/melo.png");
+
+    z-index: 0;
+  }
+  #backgroundImageSabi {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 977px;
+    opacity: 0.0;
+    background-image: url("../images/sabi.png");
+
+    z-index: 0;
+  }
+  
+  /* アニメーション */
+  /* 文字がフェードインしてフェードアウトする */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  /* 背景画像切替用 */
+  @keyframes fadeInBGImage {
+    0% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 1.0;
+    }
+  }
+  @keyframes fadeOutBGImage {
+    0% {
+      opacity: 1.0;
+    }
+    100% {
+      opacity: 0.0;
+    }
+  }
+
+  
+  /* 歌詞 */
+  #lyrics {
+    width: 1200px;
+    font-size: 42px;
+    font-family: "M PLUS 1p";
+    font-weight: bold;
+    color: #aff;
+    text-shadow: 2px 2px 0px #364;
+    user-select: none;
+    cursor: pointer;
+
+    z-index: 4;
+  }
+
+  .phraseLyrics {
+    color: #fff;
+    text-shadow: 2px 2px 0px rgb(54, 22, 46);
+    font-size: 50px;
+    font-family: "M PLUS 1p";
+    font-weight: bold;
+  }
