@@ -230,7 +230,7 @@ function bgAnimation(beat) {
     elm.style.animationName = "fadeInBGImage";
   }
 	elm.style.animationDuration = beat.duration + "ms";
-	elm.style.animationFillMode = 'forwards';
+	// elm.style.animationFillMode = 'forwards';
 }
 
 /**
