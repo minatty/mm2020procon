@@ -1,11 +1,13 @@
 # マジカルミライ2020 プログラミング・コンテスト
-# 『歌って頂いた』
+# 『歌って頂いた。』
 ![](./images/readme_title.png)
+
 	TextAliveAppAPIを使用して3Dモデルを歌わせるアプリです。
 	課題曲いずれかの曲に合わせて３Dモデルが口を動かします。
 	また、口の動きに合わせて口から歌詞が出現します。
 	
-[![](http://img.youtube.com/vi/XvblDy1RltY/0.jpg)](http://www.youtube.com/watch?v=XvblDy1RltY "")	
+# [![](http://img.youtube.com/vi/XvblDy1RltY/0.jpg)](http://www.youtube.com/watch?v=XvblDy1RltY "")
+（YouTubeが開きます）
 
 # 導入
 	VisualStudioCodeのLiveServerで動作確認しております。
@@ -13,7 +15,9 @@
 # 使用方法
 ## 楽曲操作
 	1.ページを開く上部の楽曲選択欄から課題曲を選択できます。
-[![](http://img.youtube.com/vi/DPQt3TkSlTw/0.jpg)](http://www.youtube.com/watch?v=DPQt3TkSlTw "")<br>
+# [![](http://img.youtube.com/vi/DPQt3TkSlTw/0.jpg)](http://www.youtube.com/watch?v=DPQt3TkSlTw "")
+（YouTubeが開きます）
+
 	2.選択後「start!」ボタンを押すと楽曲情報が読み込まれ、再生ボタン（▷）を押すと楽曲が始まります。
 	3.課題曲の楽曲３曲以外にも曲のURLを指定することで利用可能です。
 	4.再生ボタン等の下のシークバーは音量コントロールです。
@@ -28,7 +32,9 @@
 	　しない場合は一瞬で口を開きます。
 	・「腕を動かす」のチェックをオンにするとリズムに合わせて腕を左右に動かします。
 	　（リアル系のモデルにはやや不釣り合いな動作です。）
-[![](http://img.youtube.com/vi/y2Gd83pTC5I/0.jpg)](http://www.youtube.com/watch?v=y2Gd83pTC5I "")<br>
+# [![](http://img.youtube.com/vi/y2Gd83pTC5I/0.jpg)](http://www.youtube.com/watch?v=y2Gd83pTC5I "")
+（YouTubeが開きます）
+
 	・「口パクタイミングのディレイ幅」では口パクのタイミングを微調整できます。（初期値は200ms）
 	　値が大きいほど実際の歌詞より早く口パクをするようになります。
 	・「歌詞の出現位置調整」では歌詞（単語）の出現位置を微調整できます。
@@ -36,9 +42,11 @@
 	　できるだけ口付近から近くで出現させたい場合は微調整が必要です。
 	
 	※3DモデルはOrbitControllerを使用しており、マウス操作でカメラ視点を操作することができます。
-	　左ドラッグ・・・回転
-	　ホイール・・・拡大縮小
-	　右ドラッグ・・・平行移動
+	　左ドラッグ・・・周回
+	　ホイール・・・ズーム
+	　右ドラッグ・・・パン
+[![](http://img.youtube.com/vi/EH_a8eWO7lE/0.jpg)](http://www.youtube.com/watch?v=EH_a8eWO7lE "")
+（YouTubeが開きます）
 	
 ## 歌詞情報演出
 	1.フレーズの歌詞が画面下に表示されます。
@@ -50,6 +58,13 @@
 	　単語の歌詞情報はクリックすることで消滅アニメーションが発生します。
 	　このクリック数に応じて得点情報を記録していてほんの少しお遊び要素があります。
 	　（得点情報は画面上部の「score」）
+
+# 使用ライブラリ
+	・TextAliveAppAPI
+	・Three.js
+	・GLTFLoader.js
+	・OrbitControls.js
+	・three-vrm.js
 
 # 今後の課題
 	・ValenceArousal値を使用して3Dモデルの表情を操作したい。
