@@ -2,9 +2,11 @@
 # 『歌って頂いた。』
 ![](./images/readme_title.png)
 
-	TextAliveAppAPIを使用して3Dモデルを歌わせるアプリです。
-	課題曲いずれかの曲に合わせて３Dモデルが口を動かします。
-	また、口の動きに合わせて口から歌詞が出現します。
+TextAliveAppAPIを使用して3Dモデルを歌わせるアプリです。  
+３つの課題曲全てに対応しています。  
+TextAliveAppAPIで歌詞のタイミングが適切に取得できれば、**３つの課題曲以外でも曲に合わせて歌わせることは可能です。**  
+（ただし一部制限あり）  
+その際、口の動きに合わせて口から歌詞が出現する演出もあります。
 	
 # [![](http://img.youtube.com/vi/XvblDy1RltY/0.jpg)](http://www.youtube.com/watch?v=XvblDy1RltY "")
 （YouTubeが開きます）
