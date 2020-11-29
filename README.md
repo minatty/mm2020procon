@@ -12,7 +12,8 @@ TextAliveAppAPIで歌詞のタイミングが適切に取得できれば、**３
 （YouTubeが開きます）
 
 # 導入
-	VisualStudioCodeのLiveServerで動作確認しております。
+	HTTPサーバに設置すれば動作可能です。
+	（作成時はVisualStudioCodeのLiveServerで動作確認しております。）
 
 # 使用方法
 ## 楽曲操作
